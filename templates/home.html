@@ -1,0 +1,8 @@
+{% extends 'base.html'  %} 
+{% block content %}
+<div class="welcome-container"> 
+<h1>WELCOME TO THE EXPENSE TRACKER</h1>
+<P class="subtitle">Stop wondering where your money went.Track your daily expenses, hit your goal and stress less.</P>
+<a class="add-ex" href="{{ url_for('add_expense') }}">GO TO ADD EXPENSE</a>
+</div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="GET" action="{{ url_for('display') }}">
+    <input type='text' name= 'search' placeholder='Search expenses...' value='{{ search }}'>
+    <button type='submit'>Search</button>
+</form>
+
+<strong><h3>SORT</h3></strong>
+<div>
+<a class="highest" href ="{{ url_for('display',sort='asc',search=search)}}">Lowest to Highest</a>
+</div>
+<div>
+<a class="lowest" href ="{{ url_for('display',sort='desc',search=search) }}"> Highest to lowest</a>
+</div>
+<div class="container">
+
+<h1>Your Expenses</h1>
+    Total Spending: {{ total }}
+<p>Spending by Category</p>
+{% for item in category_totals %}
+    <p>{{ item.category }}: {{ item.total }}</p>
+    {% endfor %}
+
+<table class="expense-table">
+    <tr>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Actions</th>
+    </tr>
+    {% for expense in expenses %}
+<tr>
+    <td>{{ expense.description }}</td>
+    <td> {{ expense.amount }}</td>
+    <td> {{ expense.category }}</td>
+    <td> {{ expense.expense_date }}</td>
+
+<td>
+<a class ="edit-btn" href="{{ url_for('edit',id=expense.id) }}">EDIT</a>
+<a  class="delete-btn" href="{{ url_for('delete', id = expense.id) }}">DELETE</a>
+</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+
+{% endblock %}

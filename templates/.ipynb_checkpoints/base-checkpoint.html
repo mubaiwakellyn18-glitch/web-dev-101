@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <title>ExpenseTracker</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a class="home" href="{{ url_for('home') }}">Home</a>
+    </nav>
+    <hr>
+    {% block content %} 
+    {% endblock %}
+</body>    
+<html>

@@ -1,0 +1,116 @@
+h1 {
+    text-align: center;
+}
+.add-ex {
+    display: inline block;
+    text-decoration: none;
+    background-color: green;
+    border-radius: 5px ;
+    padding: 15px 40px; /* top bottom */
+    cursor: pointer;
+    margin-top: 40px;
+    color: black;
+}
+.welcome-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.subtitle {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.add-ex:hover {
+    background-color: #34ce57;
+}
+.expense-table {
+    align-text: center;
+}
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.expense-table th,
+.expense-table td {
+    border: 1px #f0f0f0;
+    padding: 12px;
+    text-align: left;
+}
+.lowest {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+.highest,.lowest {
+    margin-right: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+.highest {
+    display: inline-block;
+    text-decoration: none;
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.sort-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;    
+}
+
+.edit-btn {
+    display: inline-block;
+    width: 65px;
+    text-align: center;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: green;
+    color: black;
+    margin-bottom: 8px;
+}
+.delete-btn {
+    display: inline-block;
+    width: 65px;
+    text-align: center;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    background-color: red;
+}
+.edit-btn:hover {
+    background-color: #146C43;
+    transition: 0.3s;
+}
+.delete-btn:hover{
+    background-color: #B02A37;
+    transition: 0.3s;
+}

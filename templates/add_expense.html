@@ -1,0 +1,17 @@
+<form method='POST'>
+<label>Description</label>
+<input type='text' class='description' name='description' placeholder='enter description'>
+<br><br>
+<label>Amount</label> 
+<input type='number' class='amount' name='amount' placeholder='enter amount'>
+<br><br>
+<label>Category</label>
+<input type='text' class='category' name='category' placeholder='enter category'>
+<br><br>
+<label>Expense Date</label>
+<input type='date' class='date' name='expense_date' placeholder='enter date'>
+<br><br>
+<button type='submit'>Submit</button>
+</form>
+
+<a href=" {{ url_for('display') }}"> GO TO EXPENSES</a>
