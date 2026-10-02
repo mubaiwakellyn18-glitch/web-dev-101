@@ -21,14 +21,7 @@ A web-based Expense Tracker built using Python and Flask.
 - CSS
 
 ## Work in Progress
-
-The following features are still being developed:
-
-- User registration
-- User login
-- User authentication
 - Additional improvements to the user interface
-
 ## How to Run
 
 1. Clone or download the project.
